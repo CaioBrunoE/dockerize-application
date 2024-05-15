@@ -1,0 +1,30 @@
+<app-default-login-layout
+     title=" Faça login em sua conta e aproveite!"
+     primaryBtnText="Conecte-se agora"
+     secondaryBtnText="Inscreva-se agora"
+     (submit)="submit()"
+     (navigate)="navigate()"
+     [disablePrimaryBtn]="!loginForm.valid"
+>
+     <form [formGroup]="loginForm">
+      <app-primary-input
+         formControlName="email"
+         inputName="email"
+         type="email"
+         label="E-mail"
+         placeholder="ogani@gmail.com"
+         >
+          <img src="/assets/login/email-icon.svg" />
+      </app-primary-input>
+
+      <app-primary-input
+         formControlName="password"
+         inputName="password"
+         type="password"
+         label="Senha"
+         >
+          <img src="/assets/login/password-icon.svg" />
+      </app-primary-input>
+      <span>Esqueceu sua senha?</span>
+     </form>
+</app-default-login-layout>

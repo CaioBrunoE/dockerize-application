@@ -1,0 +1,23 @@
+<div id="meuContainer" class="container mt-2 mb-2">
+  <div class="row g-5 my-2 container-fluid" id="container">
+    <div class="col-md-10">
+      <form class="d-flex mb-1" role="search">
+        <input class="form-control me-14" type="search"
+        placeholder="Digite o nome do serviço para fazer uma busca..."
+        [(ngModel)]="searchValue" name="Buscar">
+      </form>
+    </div>
+    <div *ngFor="let service of services | service: searchValue" class="col-3 h-25 mb-5">
+
+        <div class="card m-0 shadow" [routerLink]="['/service-details', service.id]">
+          <div class="ratio ratio-4x3">
+            <img src="../../../../assets/img/service/{{service.image}}" width="50" height="100" class="card-img-top" priority>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{service.name}}</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+

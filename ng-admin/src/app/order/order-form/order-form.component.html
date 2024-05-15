@@ -1,0 +1,101 @@
+<div class="container">
+  <h1 class="mt-4">Pedido</h1>
+  <ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">{{ order.id ? 'Editar Pedido' : 'Cadastrar Pedido'}}</li>
+  </ol>
+</div>
+<div class="container">
+  <form #orderform="ngForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-success" role="alert" *ngIf="success == true">
+          Pedido adicionado/salvo com sucesso!
+        </div>
+        <!-- <div class="alert alert-danger" role="alert" *ngFor="let erro os errors">
+                    {{ erro }}
+             </div> -->
+      </div>
+    </div>
+    <div class="row" *ngIf="order.id">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>ID:</label>
+          <input type="text" class="form-control" [ngModel]="order.id" name="id" disabled="true" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Nome: *</label>
+          <input type="text" class="form-control" [(ngModel)]="order.client" name="client" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Itens: *</label>
+          <input type="text" class="form-control" [(ngModel)]="order.orderItems" name="orderItems" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Total: *</label>
+          <input type="text" class="form-control" [(ngModel)]="order.orderTotal" name="orderTotal" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Informação Pagamento: *</label>
+          <input type="text" class="form-control" [(ngModel)]="order.paymentInformation" name="paymentInformation" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Usuário: *</label>
+          <input type="text" class="form-control" [(ngModel)]="order.registryUser" name="registryUser" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-success" *ngIf="!order.id">
+          <i class="fa fa-save"></i> Salvar
+        </button>
+        <button type="submit" class="btn btn-success" *ngIf="order.id">
+          <i class="fa fa-sync-alt"></i> Atualizar
+        </button>
+        <button type="button" class="btn btn-secondary ml-1" routerLink="/order-list">
+          <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+        </button>
+        <!-- Button open modal -->
+        <button type="button" class="btn btn-danger ml-1" *ngIf="order.id" (click)="confirmDeletion(order)"
+          data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa fa-trash"></i> Excluir
+        </button>
+      </div>
+    </div>
+  </form>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Excluir Pedido?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Deseja realmente excluir o Pedido <b>{{order.client}}</b>?
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-success" (click)="deleteOrder()"
+            routerLink="/order-list">Confirmar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+              class="fa fa-arrow-alt-circle-left"></i> Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>

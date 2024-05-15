@@ -1,0 +1,31 @@
+<main>
+
+  <!-- Seção Formulário -->
+  <section class="form-section">
+    <img [src]="currentScreen === 'login' ? '/assets/login/logo1.png' : '/assets/login/logo2.png'" />
+      <h2>{{ title }}</h2>
+      <ng-content></ng-content>
+      <div class="btn-wrapper">
+         <button
+            class="btn-primary"
+            (click)="submit()"
+            [disabled]="disablePrimaryBtn"
+        >
+            {{ primaryBtnText }}
+         </button>
+      <div class="divider">
+        <div></div>
+        <span>or</span>
+        <div></div>
+      </div>
+      <button class="btn-secondary" (click)="navigate()">{{ secondaryBtnText }}</button>
+      </div>
+  </section>
+
+  <!-- Seção Imagem -->
+  <section class="main-section">
+     <!--h1>You Should, MoveIt!</!--h1 -->
+      <img src="/assets/login/main.ilustration2.gif"/>
+  </section>
+
+</main>

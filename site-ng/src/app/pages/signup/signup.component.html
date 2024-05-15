@@ -1,0 +1,61 @@
+<app-default-login-layout
+
+title="Faça o cadastro e comece hoje mesmo!"
+primaryBtnText="Inscreva-se agora"
+secondaryBtnText="Conecte-se agora"
+(submit)="submit()"
+(navigate)="navigate()"
+[disablePrimaryBtn]="!signupForm.valid"
+>
+<form [formGroup]="signupForm">
+    <app-primary-input
+        formControlName="name"
+        inputName="name"
+        type="text"
+        label="Nome Completo"
+        placeholder="Ogani Supermercado"
+    >
+        <img src="/assets/login/email-icon.svg"/>
+    </app-primary-input>
+    
+    <app-primary-input
+        formControlName="email"
+        inputName="email"
+        type="email"
+        label="E-mail"
+        placeholder="ogani@gmail.com"
+    >
+        <img src="/assets/login/email-icon.svg"/>
+    </app-primary-input>
+
+    <app-primary-input
+    formControlName="username"
+    inputName="username"
+    type="text"
+    label="Usuário"
+    placeholder=""
+>
+    <img src="/assets/login/email-icon.svg"/>
+    </app-primary-input>
+
+    <app-primary-input
+        formControlName="password"
+        inputName="password"
+        type="password"
+        label="Senha"
+
+    >
+    <img src="/assets/login/password-icon.svg"/>
+   </app-primary-input>
+   <app-primary-input
+        formControlName="passwordConfirm"
+        inputName="passwordConfirm"
+        type="password"
+        label="Confirme sua senha"
+
+>
+    <img src="/assets/login/password-icon.svg"/>
+</app-primary-input>
+</form>
+
+</app-default-login-layout>

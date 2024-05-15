@@ -1,0 +1,116 @@
+version: '3'
+services:
+
+  ng-admin:
+    build: ./ng-admin
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./ng-admin:/usr/src/app
+      - /usr/src/app/node_modules
+    command: >
+      sh -c "npm install && ng serve --host 0.0.0.0 --port 4200"
+
+  site-ng:
+    build: ./site-ng
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./site-ng:/usr/src/app
+      - /usr/src/app/node_modules
+    command: >
+      sh -c "npm install && ng serve --host 0.0.0.0 --port 5173"
+
+  api-payments:
+    image: api-payment
+    depends_on:
+      - mongo
+    container_name: api-payment
+    build: ./api-payment
+    ports:
+      - "9002:9002"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/payments
+
+  api-auth:
+    image: api-auth
+    depends_on:
+      - mongo
+    container_name: api-auth
+    build: ./api-auth
+    ports:
+      - "9008:9008"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/auth
+
+  api-products:
+    image: api-product
+    depends_on:
+      - mongo
+    container_name: api-product
+    build: ./api-product
+    ports:
+      - "9006:9006"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/products
+
+  api-category:
+    image: api-category
+    depends_on:
+      - mongo
+    container_name: api-category
+    build: ./api-category
+    ports:
+      - "9003:9003"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/category
+
+  api-client:
+    image: api-client
+    depends_on:
+      - mongo
+    container_name: api-client
+    build: ./api-client
+    ports:
+      - "9001:9001"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/clients
+
+  api-service:
+    image: api-service
+    depends_on:
+      - mongo
+    container_name: api-service
+    build: ./api-service
+    ports:
+      - "9005:9005"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/services
+
+  api-order:
+    image: api-order
+    depends_on:
+      - mongo
+    container_name: api-order
+    build: ./api-order
+    ports:
+      - "9007:9007"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/order
+
+  api-user:
+    image: api-user
+    depends_on:
+      - mongo
+    container_name: api-user
+    build: ./api-user
+    ports:
+      - "9004:9004"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/user
+
+  mongo:
+      image: mongo:latest
+      container_name: meumongodb
+      ports:
+        - "27017:27017"

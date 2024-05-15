@@ -1,0 +1,69 @@
+<div class="container">
+  <h1 class="mt-4">Serviços</h1>
+  <ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Listar Serviços</li>
+  </ol>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="createService()">
+        <i class="fa fa-plus"></i> Cadastrar
+      </button>
+    </div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-md-12">
+      <form class="d-flex mb-5" role="search">
+        <input class="form-control me-2" type="search" placeholder="Digite o nome do serviço para fazer uma busca" [(ngModel)]="searchValue" name="Buscar">
+      </form>
+      <table class="table table-sm table-condensed table-hover">
+        <thead>
+          <tr>
+            <!-- <th>ID</th> -->
+            <th>Nome</th>
+            <!-- <th>Email</th> -->
+            <!-- <th>Status</th> -->
+            <th>Categoria</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <!-- <th>Tempo de Execução</th> -->
+            <th>Prazo (Mês)</th>
+            <th>Registro</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr
+            *ngFor="let service of services | servicessearchfilter:searchValue |  paginate: { itemsPerPage: 5, currentPage: page, totalItems: totalLength } ">
+            <!-- <td>{{ service.id }}</td> -->
+            <td>{{ service.name}}</td>
+            <!-- <td>{{ service.email }}</td> -->
+            <!-- <td>{{ service.status }}</td> -->
+            <td>{{ getCategoryName(service.idCategory) }}</td>
+            <td>{{ service.description }}</td>
+            <td>{{ service.price | currency}}</td>
+            <!-- <td>{{ service.runtime }}</td> -->
+            <td>{{ service.term }}</td>
+            <td>{{ service.registryUser }}</td>
+            <td>
+              <button class=" btn btn-primary" id="button" routerLink="/service-form/{{ service.id }}">
+                <i class="fa fa-edit"></i>
+              </button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <br>
+  <div class="pagination justify-content-end">
+    <pagination-controls (pageChange)="page=$event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+  </div>
+</div>

@@ -1,0 +1,322 @@
+<div class="container">
+  <div class="card">
+    <div
+      class="card-header d-flex justify-content-between"
+      style="background-color: #7fad39; color: white"
+    >
+      <div>
+        <h5>Pagamentos</h5>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="d-flex justify-content-between shadow mb-4 p-1">
+    <div class="col-md-5 mb-3">
+      <div class="card p-3 mb-3 h-100" style="margin-bottom: 100px">
+        <div
+          class="d-flex justify-content-between p-3 shadow card-order-detail"
+          *ngFor="let product of cart.products"
+          style="margin-bottom: 20px"
+        >
+          <div>
+            <h6 class="my-0">{{ product.name }}</h6>
+            <small class="text-muted">{{ product.description }}</small>
+          </div>
+
+          <span class="text-muted">Uni: {{ product.quantity }}</span>
+          <span class="text-muted">{{ product.price | currency }}</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>Total (BRL)</span>
+          <strong>{{ totalCart | currency }}</strong>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 pb-3" style="margin-left: 100px">
+      <div class="card text-center">
+        <div class="card-header">
+          <div class="row">
+            <!-- Opções de pagamento -->
+            <div class="col-md-12">
+              <h4 class="mb-3">Pagamento</h4>
+            </div>
+
+            <form class="d-flex justify-content-between" [formGroup]="form">
+              <div
+                class="custom-control custom-radio"
+                *ngIf="
+                  selectedPaymentMethod == 'card' || selectedPaymentMethod == ''
+                "
+              >
+                <input
+                  id="card"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input btn-check"
+                  autocomplete="off"
+                  formControlName="paymentMethod"
+                  value="1"
+                  (click)="selectedMethod('card')"
+                  checked
+                  required
+                />
+                <label
+                  class="custom-control-label mx-2 btn btn-outline-success"
+                  for="card"
+                >
+                  Cartão
+                </label>
+              </div>
+              <div
+                class="custom-control custom-radio"
+                *ngIf="
+                  selectedPaymentMethod == 'pix' || selectedPaymentMethod == ''
+                "
+              >
+                <input
+                  id="pix"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input btn-check"
+                  formControlName="paymentMethod"
+                  value="2"
+                  (click)="selectedMethod('pix')"
+                  required
+                />
+                <label
+                  class="custom-control-label mx-2 btn btn-outline-success"
+                  for="pix"
+                >
+                  Pix
+                </label>
+              </div>
+              <div
+                class="custom-control custom-radio"
+                *ngIf="
+                  selectedPaymentMethod == 'tiket' ||
+                  selectedPaymentMethod == ''
+                "
+              >
+                <input
+                  id="tiket"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input btn-check"
+                  formControlName="paymentMethod"
+                  value="3"
+                  (click)="selectedMethod('tiket')"
+                  required
+                />
+                <label
+                  class="custom-control-label mx-2 btn btn-outline-success"
+                  for="tiket"
+                >
+                  Boleto
+                </label>
+              </div>
+            </form>
+          </div>
+          <!-- Boleto -->
+          @if (methods == "tiket") {
+          <div class="w-100">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Boleto enviado por E-mail</h5>
+                  <p class="card-text">
+                    <i
+                      class="fa-solid fa-check-double"
+                      style="color: #63e6be"
+                    ></i>
+                    Enviado com sucesso para seu E-mail
+                  </p>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Prazo de 3 dias para o pagamento
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4" />
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button
+                class="btn btn-outline-success"
+                (click)="onSubmit($event)"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                type="submit"
+              >
+                Continuar
+              </button>
+              <button class="btn btn-outline-info" (click)="selectedMethod('')">
+                Voltar
+              </button>
+            </div>
+          </div>
+          }
+          <!--Cartao-->
+          @if (methods == "card") {
+          <div class="row">
+            <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+              <div class="col-md-12 mb-3">
+                <label for="cc-nome">Nome no cartão</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ccnome"
+                  formControlName="ccnome"
+                  placeholder="Caio Bruno Elias"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12 mb-3">
+                <label for="cc-numero">Número do cartão de crédito</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ccnumero"
+                  formControlName="ccnumero"
+                  placeholder="123-456-789-10"
+                  required
+                />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cc-expiracao">Data de expiração</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ccexpiracao"
+                    formControlName="ccexpiracao"
+                    placeholder="12/28"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <label for="cc-cvv">CVV</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cccvv"
+                    formControlName="cccvv"
+                    placeholder="123"
+                    required
+                  />
+                </div>
+              </div>
+              <hr class="mb-4" />
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button
+                  class="btn btn-outline-success"
+                  [disabled]="!form.valid"
+                  (click)="onSubmit($event)"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  type="submit"
+                >
+                  Continuar
+                </button>
+                <button
+                  class="btn btn-outline-info"
+                  (click)="selectedMethod('')"
+                >
+                  Voltar
+                </button>
+              </div>
+            </form>
+          </div>
+          }
+
+          <!--Pix-->
+          @if (methods == "pix") {
+          <div class="col-md-12">
+            <form>
+              <div *ngIf="btnlg">
+                <div
+                  class="custom-control custom-radio d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    class="btn btn-primary btn-lg"
+                    (click)="geraQrCode(qrCodeInputValue, $event)"
+                  >
+                    Gerar QR Code
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <img *ngIf="!isLoading && qrCodeImg" [src]="qrCodeImg" />
+              </div>
+
+              <div>
+                <hr class="mb-4" />
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button
+                    class="btn btn-outline-success"
+                    [disabled]="isLoading"
+                    (click)="onSubmit($event)"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    type="submit"
+                  >
+                    Continuar
+                  </button>
+                  <button
+                    class="btn btn-outline-info"
+                    (click)="selectedMethod('')"
+                  >
+                    Voltar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Confirmando pagameto
+            </h5>
+            <button
+              *ngIf="statusPaid == '1'"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <!--Alert-->
+            @if (statusPaid == '1' || statusPaid == "2") {
+            <div class="modal-body text-center">
+              <i class="fa-solid fa-check"></i>
+              concluido !
+            </div>
+            }@else {
+            <div class="spinner-border text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

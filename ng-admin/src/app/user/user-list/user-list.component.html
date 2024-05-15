@@ -1,0 +1,55 @@
+<div class="container" >
+  <h2 class="mt-2">Usuários</h2>
+  <ol class="breadcrumb mb-4">
+      <li class="breadcrumb-item active">Listar Usuários</li>
+  </ol>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+            <button class="btn btn-primary" (click)="createUser()">
+                <i class="fa fa-plus"></i> Cadastrar
+            </button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-12">
+          <form class="d-flex mb-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" [(ngModel)]="searchValue" name="search">
+          </form>
+            <table class="table table-sm table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nome Usuário</th>
+                        <!-- <th>Senha</th> -->
+                        <th>Email</th>
+                        <th>Registro Usuário</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users | usersearchfilter:searchValue |  paginate: { itemsPerPage: 5, currentPage: page, totalItems: totalLength } ">
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.username }}</td>
+                       <!-- <td>{{ user.password}}</td> -->
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.registryUser }}</td>
+                        <td>
+                            <button class=" btn btn-primary"
+                                    routerLink="/user-form/{{ user.id }}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  <br>
+  <div class="pagination justify-content-end col-md-10">
+    <pagination-controls (pageChange)="page=$event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+  </div>
+</div>
+

@@ -1,0 +1,98 @@
+.container img {
+  max-width: 400px;
+}
+
+.btn btn-outline-success add{
+  background-color: #ffffff;
+  color: #7FAD39;
+  width: 40px;
+
+
+}
+
+.btn btn-outline-success green{
+  background-color: #ffffff;
+  color: #7FAD39;
+  width: 160px;
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+
+}
+
+.card-body {
+  text-align: center;
+}
+
+.btn-primary{
+  background-color: #7FAD39;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.price{
+  font-size:xx-large;
+}
+
+.price-hidden{
+  font-size:xx-large;
+  display: none;
+}
+
+.price-discount{
+  text-decoration:line-through;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 22px;
+  color: rgb(201, 3, 3);
+}
+
+.price-discount-hidden{
+  text-decoration:line-through;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.quantity-field{
+  background-color: #ffffff;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.col{
+  max-width: none;
+}
+
+.large-input{
+  width: 1000px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.image-hover{
+  box-shadow: 1px 1px 1rem rgb(146, 146, 146);
+  transition: transform 0.3s ease;
+}
+
+.image-hover:hover{
+  transform: scale(1.1)
+}
+
+.central-image{
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  font-weight: bold;
+  color: white;
+
+}
+
+.central-image h2{
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.hidden {
+  display:none;
+}

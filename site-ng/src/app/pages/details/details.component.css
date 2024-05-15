@@ -1,0 +1,55 @@
+.container img {
+  width: 170%;
+  height: 100%;
+  padding: 1em;
+}
+
+
+.btn-add{
+  background-color: #7FAD39;
+  color: #f2f2f2;
+
+
+}
+
+.btn-green{
+  background-color: #7FAD39;
+  color: #fafcf9;
+  width: 110px;
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+
+}
+
+.card-body {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #7FAD39;
+  font-family:Arial, Helvetica, sans-serif;
+  border:none;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 80px;
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+
+}
+
+
+.quantity-field{
+  background-color: #ffffff;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  max-width: 10px;
+}
+
+.col{
+  width: 10px;
+  align-self: center;
+}
+
+
+

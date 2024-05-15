@@ -1,0 +1,323 @@
+[{
+  "_id": {
+    "$oid": "65f349b02f8a26142ae0e313"
+  },
+  "name": "Larissa Braz",
+  "username": "LarissB",
+  "password": "427561",
+  "email": "larissa.braz@gmail.com",
+  "updated": "2024-04-10T13:28:45.181586600",
+  "registryUser": "admin",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "65f34a1e2f8a26142ae0e315"
+  },
+  "name": "Carlos Queiroz",
+  "username": "carlosQ",
+  "password": "612536",
+  "email": "carlos.queiroz@gmail.com",
+  "updated": "2024-04-10T13:23:03.969064500",
+  "registryUser": "user",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "65f47c8cffa46124ab48be74"
+  },
+  "name": "Rafaela Santos",
+  "username": "rafsanT",
+  "password": "345677",
+  "email": "rafaela.santos@gmail.com",
+  "created": "2024-03-15T13:51:24.003418800",
+  "updated": "2024-04-11T14:31:31.814640900",
+  "registryUser": "user",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "65f87e4c47628e7d9a56e53f"
+  },
+  "name": "Lorena Valverde",
+  "username": "lorenaV",
+  "password": "123456",
+  "email": "lorena.val@gmail.com",
+  "created": "2024-03-18T14:47:56.029635",
+  "updated": "2024-04-10T16:54:29.063594200",
+  "registryUser": "user",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "6616e591997a1e57d53d524d"
+  },
+  "name": "Mariana Consolaro",
+  "username": "marianA",
+  "password": "158556",
+  "email": "mariana.c@gmail.com",
+  "created": "2024-04-10T16:16:33.146075900",
+  "registryUser": "admin",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "661826ee3a7e705dd1337c81"
+  },
+  "name": "Flor Alves",
+  "username": "florAlv",
+  "password": "889745",
+  "email": "flor.alves@gmail.com",
+  "created": "2024-04-11T15:07:42.695726800",
+  "registryUser": "user",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "661984e27bf36612193171ac"
+  },
+  "name": "Maria Lindinalva",
+  "username": "mariaaL",
+  "password": "587415",
+  "email": "maria.lindinalva@hotmail.com",
+  "created": "2024-04-12T16:00:50.493818300",
+  "updated": "2024-04-12T17:37:47.684657400",
+  "registryUser": "user",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "66199b617bf36612193171ad"
+  },
+  "name": "Paloma Soares",
+  "username": "palomaS",
+  "password": "123458",
+  "email": "paloma.soares@gmail.com",
+  "created": "2024-04-12T17:36:49.054885900",
+  "registryUser": "admin",
+  "_class": "com.ms.user.model.User"
+},
+{
+  "_id": {
+    "$oid": "6621bf61bd8bb45caef6d684"
+  },
+  "username": "Karina Lavelord",
+  "password": "$2a$10$qE.fM2U9dbTUhzHdY8SL4O2.9no5ihGDTYJkdNaqripNInnBhNdOW",
+  "email": "karina.lavelord@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66226dc62fe6064385f7285a"
+  },
+  "username": "Joelma Flores",
+  "password": "$2a$10$Z8xr4SOcSElGoKMff0We3ufNt/F9nDA1i8y61ifcH7dfXhzwF6ueC",
+  "email": "Joelma.flores@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "6629673ae427c24226d8367b"
+  },
+  "username": "Larissa Tavares",
+  "password": "$2a$10$yqoPVOKocdfq08t0g8.NJemtkMqVBpJDNQ0SWWEXOw4KcliGClVDW",
+  "email": "larissa.tavares@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66296d710af1615dcb7ab728"
+  },
+  "username": "Carolina Santos",
+  "password": "$2a$10$szhSlgp6rfJXctaA5BZTF.8md4taDzYDq6/rb/LHKpGgsFaMRRLbu",
+  "email": "carolina@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662ab9ac2f95c77cb0fa19c1"
+  },
+  "username": "Lorena Souza",
+  "password": "$2a$10$McfA/21qqJPhO3yfTWvcbeEPLBB.QFZP4NJRpgpeezso9W.MQVFWm",
+  "email": "lorena.s@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662bb48e60544d3db08c884b"
+  },
+  "username": "Lara Menezes",
+  "password": "$2a$10$mjZ6nsXMcxhRNs7.8w7veOoSxr0NkmpwrKzv7w4u5re0N71.TEevK",
+  "email": "lara.menezes@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662c07115a618d5e78007429"
+  },
+  "username": "Junior Santos",
+  "password": "$2a$10$43y43XbUL.bPsGCwErq8EuweYUNZx..i4ZZD58Tkt05MDOZ/iXG0q",
+  "email": "jr@gmail.com",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662c15235a618d5e7800742a"
+  },
+  "username": "Karina",
+  "password": "$2a$10$X3Ibs7HYZZ0lurpRefgxvumfWaxoaP7kxGN1UXcsckZB1mnb/WPTu",
+  "email": "karina@gmail.com",
+  "_class": "com.ms.auth.model.User",
+  "name": "Karina Alvoredo"
+},
+{
+  "_id": {
+    "$oid": "662fb38f7b2b466068030a36"
+  },
+  "name": "Lizia Andrade",
+  "email": "lizia.andrade@gmail.com",
+  "username": "Lizia",
+  "password": "$2a$10$pFTezdOdZdMzowuP21NI6ufIscKHxNZMixyo3r5rsCcGylSVm52Hy",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662fb62c7b2b466068030a37"
+  },
+  "name": "Priscila Passos",
+  "email": "priscila@gmail.com",
+  "username": "user",
+  "password": "$2a$10$z.2Ls0pS0OJ6rzYUCN4XSeYtVW61K6chk76vEh6VGDyPLXA9svFz6",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662fdb097b2b466068030a38"
+  },
+  "name": "Neuber Souza",
+  "email": "neuber@gmail.com",
+  "username": "neuber",
+  "password": "$2a$10$j6YPnDYCNFbwwT4Lyqaqfe4p45EWpLhoU6Exv6iI.jx7USMKf08dK",
+  "_class": "com.ms.auth.model.User",
+  "role": "ADMIN"
+},
+{
+  "_id": {
+    "$oid": "662ff14a7b2b466068030a39"
+  },
+  "name": "Lara Fabíola",
+  "email": "lara@gmail.com",
+  "username": "lara",
+  "password": "$2a$10$IViwjJCNURBSPI7yjAjXM.q0eeglGkjDsuBntFWVMcsSr9yvaXFN.",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662ff94e54c4dc58f2d4f434"
+  },
+  "name": "Mariana Tavares",
+  "email": "mariana@gmail.com",
+  "username": "mari",
+  "password": "$2a$10$IK2HUdhNoxEWWnrhhxiQA.GkmkOYUSMr7jUuZadiAckHmswEExmYe",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662ffa3554c4dc58f2d4f435"
+  },
+  "name": "Norma Dantas",
+  "email": "norma@gmail.com",
+  "username": "norma",
+  "password": "$2a$10$cV.8491CCvkR4YLM4Ye1FOjTCQ6Cgwpzmj2nMnRDYCuYNJ.S7HSVa",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "662ffe4e2c26e67ca5bd19fa"
+  },
+  "name": "Maju Dantas",
+  "email": "maju@gmail.com",
+  "username": "maju",
+  "password": "$2a$10$wDkfRWm/kD03gcfQixFZ5uORx9Ashz2IWDlKPaDhW1JOCy/c2.NB2",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66304ca73df8f91d4e3ed3e0"
+  },
+  "name": "Joselita Queiroz",
+  "email": "joselita@gmail.com",
+  "username": "user",
+  "password": "$2a$10$6YyArydvoGWLMDtRLRNQI.FAQ14BerkbT/xIuye6xMYZSzeCAr6oW",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "663050c33df8f91d4e3ed3e2"
+  },
+  "name": "Rosana Paulista",
+  "email": "rosanaa@gmail.com",
+  "username": "user",
+  "password": "$2a$10$gpJQr/7sdVFeE.uOAUEC4ecMKzqEO93LhTX74vhVayWwNmswjt/Vm",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66313b44bd672075ab577024"
+  },
+  "name": "Juliana Costa",
+  "email": "julianac@gmail.com",
+  "username": "user",
+  "password": "$2a$10$aW8LTeZdcSu6DyHh4c/47.mUeLnLYDjuX3ZxZ1rfPobsx.Em1zYhm",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66313b82bd672075ab577025"
+  },
+  "name": "Marta Vieira",
+  "email": "marta@gmail.com",
+  "username": "user",
+  "password": "$2a$10$gnhfMeoIw9X1izWuveEcD.NclS0G0syNGAQ/BSeNYJSPHYUvrx4Jm",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66313c0ebd672075ab577026"
+  },
+  "name": "Suzana Vieira",
+  "email": "suzana@gmail.com",
+  "username": "user",
+  "password": "$2a$10$cmao5MjGykArcewPMclV0uGQDEcs3GABayqUt5GUve5efgsFXtCwW",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "66313f95b3e8e15f0276dc71"
+  },
+  "name": "Pâmela Peixes",
+  "email": "peixes@gmail.com",
+  "username": "user",
+  "password": "$2a$10$3ctbOeNUKkPE/y94H7G8x.zGkgBtT82J.R91prIZCGVuYzSLM/AEa",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "663474cb8063d6158174383c"
+  },
+  "name": "Mariana Perez",
+  "email": "perez.mariana@gmail.com",
+  "username": "user",
+  "password": "$2a$10$l.HqXAmuUS91Xko6NWbP..4n7YZzqyizhf6lLAWijrj//82JPtWy.",
+  "_class": "com.ms.auth.model.User"
+},
+{
+  "_id": {
+    "$oid": "663afc23eca55e553aa911a0"
+  },
+  "name": "Everaldo Macedo Bispo",
+  "email": "everaldo@gmail.com",
+  "username": "user",
+  "password": "$2a$10$fHsIMg9tHkUmzdamPS6dluwm2Cx1ryKE7eny.LPl7xiBED016qmfy",
+  "_class": "com.ms.auth.model.User"
+}]

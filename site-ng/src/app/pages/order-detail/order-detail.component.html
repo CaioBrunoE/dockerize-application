@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header d-flex justify-content-between cardBar">
+      <div>
+        <h5>Pedido: </h5>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="d-flex justify-content-between shadow mb-4 ">
+    <div class="card-body align-items-center">
+      <div class="row" *ngFor="let item of order?.orderItems; let i = index">
+        <div class="col-md-11 m-4 mb-2 shadow p-0">
+          <div class="mb-3 d-flex">
+            <div>
+               <h6 class="card-text px-4 pt-4">{{ i + 1 }}°- {{ item.item }}</h6>
+               <p class="card-text px-4">{{item.description}}</p>
+            </div>
+            <span class="text-muted col-md-3 px-4 pt-4">Quant: {{ item.quantity }}</span>
+            <div class="row">
+              <span class="text-muted col-md-12 px-4 pt-4 text-end">Uni: {{ item.price.toFixed(2) | currency}}</span>
+            </div>
+          </div>
+        </div>
+        <span class="text-muted col-md-11 text-end">Total: {{ (item.price * item.quantity).toFixed(2) | currency}}</span>
+      </div>
+    </div>
+
+    <div class=" col-6 pb-3 m-4" *ngIf="order">
+      <div class="card text-center h-100">
+        <div class="card-header">
+          Valor do pedido
+        </div>
+        <div class="card-body text-end" [ngClass]="{'fixed-card': isScrolled}" >
+          <h5 class="card-title my-4">Resumo Pagamento</h5>
+          <p class="card-text">Quantidade de item(s) <span>: {{ indiceFinalDeI }}</span></p>
+          <p class="card-text">Desconto <span>R$: {{ order.discountsAndFees }}</span></p>
+          <p class="card-text">Total do pedido <span><b>R$: {{ getTotalOrderPrice().toFixed(2) | currency }}</b></span></p>
+          <a href="#" class="btn me-2 text-white my-4" style="background-color: #7fad39;"
+            [routerLink]="['/home']">Voltar a loja</a>
+          <a href="#" class="btn btn-secondary" [routerLink]="['/order']">Voltar a lista</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+#container{
+  text-align: center;
+  justify-content: center;
+}
+
+span{
+  color: grey;
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+}
+
+
+.card:hover{
+  cursor: pointer;
+  background-color: #eee;
+}
+#meuContainer{
+  text-align: center;
+}

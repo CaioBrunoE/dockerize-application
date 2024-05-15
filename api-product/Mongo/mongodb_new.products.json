@@ -1,0 +1,760 @@
+[{
+  "_id": {
+    "$oid": "65f4a2469fc0a90f375dba5f"
+  },
+  "name": " Saca de Cebola Nacional",
+  "description": "Saca de 1kg de cebola branca",
+  "price": "2.75",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "50",
+  "brand": "Da Terra",
+  "stock": "Em estoque",
+  "supplier": "Agro",
+  "created": "2024-04-23T17:27:09.126273800",
+  "updated": "2024-04-29T14:48:45.842148100",
+  "registryUser": "Admin",
+  "image": "onion.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "65f874feb544004f76a23a59"
+  },
+  "name": "Morango Orgânico",
+  "description": "Bandeja de morangos de 300g",
+  "price": "19.99",
+  "idCategory": "66296ec4077ce604a36754ee",
+  "discount": "0",
+  "brand": "Vinhedense",
+  "stock": "Fora de estoque",
+  "supplier": "Vinhedo LTDA",
+  "created": "2024-03-18T14:08:14.957580300",
+  "updated": "2024-04-29T14:49:24.546183100",
+  "registryUser": "Admin",
+  "image": "strawberries.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6616e6d18ee13e0df819b589"
+  },
+  "name": "Cenoura Orgânica",
+  "description": "Bandeja de 1kg de cenoura",
+  "price": "1.92",
+  "idCategory": "66296ec4077ce604a36754ee",
+  "discount": "10",
+  "brand": "Direto da Serra",
+  "stock": "Em estoque",
+  "supplier": "Agro",
+  "created": "2024-04-10T16:21:53.081249100",
+  "updated": "2024-04-30T10:02:20.346497300",
+  "registryUser": "Admin",
+  "image": "carrots.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6616e8ae8ee13e0df819b58a"
+  },
+  "name": " Bandeja de Pêra Williams",
+  "description": "Bandeja de pêra com 500g",
+  "price": "3.40",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Direto da Serra",
+  "stock": "Em estoque",
+  "supplier": "Agro",
+  "created": "2024-04-10T16:29:50.723960400",
+  "updated": "2024-04-29T14:50:22.490884600",
+  "registryUser": "Admin",
+  "image": "fruits.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6616e9198ee13e0df819b58c"
+  },
+  "name": "Croissant Tradicional",
+  "description": "1 Unidade de Croissant de Queijo",
+  "price": "9.50",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "0",
+  "brand": "Panidor",
+  "stock": "Em estoque",
+  "supplier": "Bread",
+  "created": "2024-04-10T16:31:37.203019900",
+  "updated": "2024-04-29T14:50:51.899674600",
+  "registryUser": "Admin",
+  "image": "croissant.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6619663c1b04e666ac54f945"
+  },
+  "name": "Mirtilo Blueberry",
+  "description": "Blueberry embalada com 200g",
+  "price": "14.99",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Da Terra",
+  "stock": "Em estoque",
+  "supplier": "Sítio Verde",
+  "created": "2024-04-12T13:50:04.435767800",
+  "updated": "2024-04-29T14:51:16.007355800",
+  "registryUser": "Admin",
+  "image": "blueberries.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "66268ca8bec74b5aa27da753"
+  },
+  "name": "Ovos Caipira",
+  "description": "Caixa de ovo com 12 unidades",
+  "price": "15.99",
+  "idCategory": "66296d50077ce604a36754eb",
+  "discount": "15",
+  "brand": "Fazenda da Toca",
+  "stock": "Em estoque",
+  "supplier": "Sítio Verde",
+  "created": "2024-04-22T13:13:28.245732100",
+  "updated": "2024-04-29T14:51:47.240190300",
+  "registryUser": "Admin",
+  "image": "eggs.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6626a056bec74b5aa27da754"
+  },
+  "name": "Alface Crespa",
+  "description": "Embalagem com 2 unidades ",
+  "price": "4.99",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Direto da Serra",
+  "stock": "Em estoque",
+  "supplier": "Sítio Verde",
+  "created": "2024-04-22T14:37:26.544531900",
+  "updated": "2024-04-29T14:52:12.136234600",
+  "registryUser": "Admin",
+  "image": "lettuce.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6626a08abec74b5aa27da755"
+  },
+  "name": "Queijo Suíço",
+  "description": "1 Unidade de Queijo Suíço",
+  "price": "25.99",
+  "idCategory": "66296ef2077ce604a36754ef",
+  "discount": "0",
+  "brand": "Tirolez",
+  "stock": "Em estoque",
+  "supplier": "Tirolez",
+  "created": "2024-04-22T14:38:18.499761400",
+  "updated": "2024-04-29T14:52:43.498119500",
+  "registryUser": "Admin",
+  "image": "cheese.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6626a08bbec74b5aa27da756"
+  },
+  "name": "Sal Marinho",
+  "description": "Pacote de Sal Marinho de 500g",
+  "price": "7.70",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "0",
+  "brand": "Sal Cisne",
+  "stock": "Em estoque",
+  "supplier": "Sal Cisne",
+  "created": "2024-04-22T14:38:19.715953200",
+  "updated": "2024-04-29T14:53:08.546972800",
+  "registryUser": "Admin",
+  "image": "salt.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6628048b21e8e060af2b8570"
+  },
+  "name": "Banana Prata",
+  "description": "6 Unidades de Banana Prata",
+  "price": "7.00",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Mantiqueira",
+  "stock": "Em estoque",
+  "supplier": "Da Serra",
+  "created": "2024-04-23T15:57:15.252859700",
+  "updated": "2024-04-29T14:53:31.487625700",
+  "registryUser": "Admin",
+  "image": "banana.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662804be21e8e060af2b8571"
+  },
+  "name": "Framboesa Orgânica",
+  "description": "Bandeja de framboesa de 200g",
+  "price": "23.00",
+  "idCategory": "66296ec4077ce604a36754ee",
+  "discount": "40",
+  "brand": "Organic",
+  "stock": "Em estoque",
+  "supplier": "Organicos da Terra",
+  "created": "2024-04-23T15:58:06.280267",
+  "updated": "2024-04-29T14:53:59.660941600",
+  "registryUser": "Admin",
+  "image": "raspberries.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "66281a65f457d52c8937acc7"
+  },
+  "name": "Café Tradicional",
+  "description": "Pacote Café Mogiana de 500g",
+  "price": "12.50",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "0",
+  "brand": "Três Corações",
+  "stock": "Em estoque",
+  "supplier": "Shibata",
+  "created": "2024-04-23T17:30:29.369263700",
+  "updated": "2024-04-29T14:55:23.223595600",
+  "registryUser": "Admin",
+  "image": "coffee.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6628faab37e8521d0f8649bd"
+  },
+  "name": "Manjericão Verde",
+  "description": "1 Maço de manjericão",
+  "price": "2.30",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "55",
+  "brand": "Solo Vivo",
+  "stock": "Em estoque",
+  "supplier": "Agro",
+  "created": "2024-04-24T09:27:23.821105500",
+  "updated": "2024-04-29T14:55:50.924417",
+  "registryUser": "Admin",
+  "image": "basil.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6628fb0037e8521d0f8649be"
+  },
+  "name": "Amendoim Assado",
+  "description": "Pacote de Amendoim de 150g",
+  "price": "12.30",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "0",
+  "brand": "Nuts",
+  "stock": "Em estoque",
+  "supplier": "Nuts LTDA",
+  "created": "2024-04-24T09:28:48.919996",
+  "updated": "2024-04-29T14:56:21.837419800",
+  "registryUser": "Admin",
+  "image": "nuts.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "6628fb4337e8521d0f8649bf"
+  },
+  "name": "Bolo Fit",
+  "description": "1 Fatia de bolo de chocolate diet",
+  "price": "10.50",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "0",
+  "brand": "Cake",
+  "stock": "Em estoque",
+  "supplier": "Cake",
+  "created": "2024-04-24T09:29:55.546952",
+  "updated": "2024-04-29T14:57:00.524445200",
+  "registryUser": "Admin",
+  "image": "cake.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ab862857a197cd0885eea"
+  },
+  "name": "Água Mineral",
+  "description": "Garrafa de 500ml",
+  "price": "4.25",
+  "idCategory": "66296c4b077ce604a36754ea",
+  "discount": "0",
+  "brand": "Lindoya",
+  "stock": "Em estoque",
+  "supplier": "Nestlé",
+  "created": "2024-04-25T17:09:06.843815600",
+  "updated": "2024-04-29T14:57:28.891522400",
+  "registryUser": "Admin",
+  "image": "bottle-water.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ab908857a197cd0885eeb"
+  },
+  "name": "Pão Italiano",
+  "description": "Pão semi italiano 300g",
+  "price": "8.00",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "0",
+  "brand": "Panco",
+  "stock": "Em estoque",
+  "supplier": "Flavour",
+  "created": "2024-04-25T17:11:52.656813300",
+  "updated": "2024-04-29T14:58:33.021630100",
+  "registryUser": "Admin",
+  "image": "bread_italian.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662aba09857a197cd0885eec"
+  },
+  "name": "Macarons Sortidos",
+  "description": "Pacote com 5 unidades",
+  "price": "15.00",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "0",
+  "brand": "Macarron",
+  "stock": "Em estoque",
+  "supplier": "Sweet",
+  "created": "2024-04-25T17:16:09.498892500",
+  "updated": "2024-04-29T14:59:14.137958700",
+  "registryUser": "Admin",
+  "image": "macarons.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662abae3857a197cd0885eed"
+  },
+  "name": "Cupcake de Cereja",
+  "description": "1 Unidade de Cupcake de Cereja",
+  "price": "17.59",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "0",
+  "brand": "Maria Flor",
+  "stock": "Em estoque",
+  "supplier": "Candys",
+  "created": "2024-04-25T17:19:47.936589900",
+  "updated": "2024-04-29T14:59:42.173666500",
+  "registryUser": "Admin",
+  "image": "cupcake.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662abc0a857a197cd0885eee"
+  },
+  "name": "Ovo de Codorna",
+  "description": "Bandeja com 12 Unidades",
+  "price": "22.69",
+  "idCategory": "66296d50077ce604a36754eb",
+  "discount": "0",
+  "brand": "Aves",
+  "stock": "Em estoque",
+  "supplier": "Do Campo",
+  "created": "2024-04-25T17:24:42.803697300",
+  "updated": "2024-04-29T15:00:10.557023800",
+  "registryUser": "Admin",
+  "image": "egg_codorna.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662abc45857a197cd0885eef"
+  },
+  "name": "Ovo Orgânico",
+  "description": "Bandeja com 24 Unidades",
+  "price": "30.29",
+  "idCategory": "66296ec4077ce604a36754ee",
+  "discount": "0",
+  "brand": "Red Eggs",
+  "stock": "Em estoque",
+  "supplier": "Do Campo",
+  "created": "2024-04-25T17:25:41.741157500",
+  "updated": "2024-04-29T15:00:41.749096200",
+  "registryUser": "Admin",
+  "image": "eggs_redjpg.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662abcf8857a197cd0885ef0"
+  },
+  "name": "Pão Francês",
+  "description": "5 Unidades de Pão Francês",
+  "price": "5.50",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "30",
+  "brand": "Dona Farinha",
+  "stock": "Em estoque",
+  "supplier": "Dona Benta",
+  "created": "2024-04-25T17:28:40.315776400",
+  "updated": "2024-04-29T15:01:12.212556300",
+  "registryUser": "Admin",
+  "image": "french_bread.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662abd49857a197cd0885ef1"
+  },
+  "name": "Filé Mignon",
+  "description": "Peça de filet mignon de 1,5kg",
+  "price": "70.99",
+  "idCategory": "66296e7f077ce604a36754ec",
+  "discount": "0",
+  "brand": "Friboi",
+  "stock": "Em estoque",
+  "supplier": "Seara",
+  "created": "2024-04-25T17:30:01.742205200",
+  "updated": "2024-04-29T15:01:37.622471700",
+  "registryUser": "Admin",
+  "image": "meat.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac01a857a197cd0885ef2"
+  },
+  "name": "Suco de Laranja",
+  "description": "Garrafa de 500ml",
+  "price": "8.99",
+  "idCategory": "66296c4b077ce604a36754ea",
+  "discount": "0",
+  "brand": "Del Valle",
+  "stock": "Em estoque",
+  "supplier": "Juices",
+  "created": "2024-04-25T17:42:02.442829800",
+  "updated": "2024-04-29T15:02:02.283184900",
+  "registryUser": "Admin",
+  "image": "orange_juice.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac079857a197cd0885ef3"
+  },
+  "name": "Milho para Pipoca",
+  "description": "Pacote de 300g de milho",
+  "price": "10.79",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "0",
+  "brand": "Yoki",
+  "stock": "Em estoque",
+  "supplier": "Armazém da Terra",
+  "created": "2024-04-25T17:43:37.193642300",
+  "updated": "2024-04-29T15:02:32.795921",
+  "registryUser": "Admin",
+  "image": "popcorn.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac0c1857a197cd0885ef4"
+  },
+  "name": "Batata Inglesa",
+  "description": "Saca Batata Lavada de 1kg",
+  "price": "6.55",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Campestre",
+  "stock": "Em estoque",
+  "supplier": "Shibata",
+  "created": "2024-04-25T17:44:49.203827300",
+  "updated": "2024-04-29T15:03:03.208547200",
+  "registryUser": "Admin",
+  "image": "potato.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac0ff857a197cd0885ef5"
+  },
+  "name": "Vinho Tinto Seco",
+  "description": "Garrafa de Vinho Tinto de 1 litro",
+  "price": "28.22",
+  "idCategory": "66296c4b077ce604a36754ea",
+  "discount": "0",
+  "brand": "Vinícola Aurora",
+  "stock": "Em estoque",
+  "supplier": "Aurora",
+  "created": "2024-04-25T17:45:51.119195800",
+  "updated": "2024-04-29T15:03:26.664254300",
+  "registryUser": "Admin",
+  "image": "red_wine.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac161857a197cd0885ef6"
+  },
+  "name": "Salmão em Posta Premium",
+  "description": "Salmão em Posta de 400g",
+  "price": "89.99",
+  "idCategory": "66296e7f077ce604a36754ec",
+  "discount": "10",
+  "brand": "Swift",
+  "stock": "Fora de estoque",
+  "supplier": "Swift",
+  "created": "2024-04-25T17:47:29.283772500",
+  "updated": "2024-04-29T15:03:49.851467800",
+  "registryUser": "Admin",
+  "image": "salmon.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac1ac857a197cd0885ef7"
+  },
+  "name": "Batata Doce Orgânica",
+  "description": " Bandeja Batata com 500g",
+  "price": "14.19",
+  "idCategory": "66296ec4077ce604a36754ee",
+  "discount": "0",
+  "brand": "Organic",
+  "stock": "Em estoque",
+  "supplier": "Shibata",
+  "created": "2024-04-25T17:48:44.061276",
+  "updated": "2024-04-29T15:04:28.530497700",
+  "registryUser": "Admin",
+  "image": "sweet_potato.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac2f6857a197cd0885ef8"
+  },
+  "name": "Espetinho de Frango",
+  "description": "5 Unidades",
+  "price": "16.59",
+  "idCategory": "66296e7f077ce604a36754ec",
+  "discount": "0",
+  "brand": "Seara",
+  "stock": "Em estoque",
+  "supplier": "Seara",
+  "created": "2024-04-25T17:54:14.081310900",
+  "updated": "2024-05-03T13:45:50.305999300",
+  "registryUser": "Admin",
+  "image": "chiken.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac3c3857a197cd0885ef9"
+  },
+  "name": "Garrafa de Leite",
+  "description": "Garrafa de Leite de 800ml",
+  "price": "12.99",
+  "idCategory": "66296ef2077ce604a36754ef",
+  "discount": "0",
+  "brand": "Parmalat",
+  "stock": "Em estoque",
+  "supplier": "Da Vaca",
+  "created": "2024-04-25T17:57:39.993696700",
+  "updated": "2024-04-29T15:05:27.171039700",
+  "registryUser": "Admin",
+  "image": "milk.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac5a3857a197cd0885efa"
+  },
+  "name": "Queijo Curado",
+  "description": "Queijo Amarelo Curado de 500g",
+  "price": "35.90",
+  "idCategory": "66296ef2077ce604a36754ef",
+  "discount": "0",
+  "brand": "Tirolez",
+  "stock": "Em estoque",
+  "supplier": "Da Vaca",
+  "created": "2024-04-25T18:05:39.355938400",
+  "updated": "2024-04-29T15:05:58.823412200",
+  "registryUser": "Admin",
+  "image": "cheese_loaf.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac66b857a197cd0885efb"
+  },
+  "name": "Aveia Integral",
+  "description": "Pacote Aveia Integral de 400g",
+  "price": "14.99",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "0",
+  "brand": "Dr Oat",
+  "stock": "Em estoque",
+  "supplier": "Carrefour",
+  "created": "2024-04-25T18:08:59.166040100",
+  "updated": "2024-04-29T15:06:57.130598900",
+  "registryUser": "Admin",
+  "image": "oats.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac6bc857a197cd0885efc"
+  },
+  "name": "Alho Roxo",
+  "description": "Pacote de 200g",
+  "price": "9.99",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Do Campo",
+  "stock": "Em estoque",
+  "supplier": "Carrefour",
+  "created": "2024-04-25T18:10:20.741679700",
+  "updated": "2024-04-29T15:07:26.087745400",
+  "registryUser": "Admin",
+  "image": "garlic.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662ac7f0857a197cd0885efd"
+  },
+  "name": "Chocolate Amargo",
+  "description": "Barra de chocolate de 150g",
+  "price": "12.50",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "10",
+  "brand": "Lindt",
+  "stock": "Em estoque",
+  "supplier": "Cacau",
+  "created": "2024-04-25T18:15:28.993249200",
+  "updated": "2024-04-29T15:07:53.702896300",
+  "registryUser": "Admin",
+  "image": "chocolate.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662b9c4452735c32a8cbbe50"
+  },
+  "name": "Melancia Baby",
+  "description": " Metade de Melancia Baby",
+  "price": "7.50",
+  "idCategory": "66296eaf077ce604a36754ed",
+  "discount": "0",
+  "brand": "Agromania",
+  "stock": "Em estoque",
+  "supplier": "Sítio Verde",
+  "created": "2024-04-26T09:21:24.041405700",
+  "updated": "2024-04-29T15:08:25.294999700",
+  "registryUser": "Admin",
+  "image": "watermelon.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662b9d4052735c32a8cbbe51"
+  },
+  "name": "Cerveja Blond Ale",
+  "description": "Garrafa de 900ml",
+  "price": "15.00",
+  "idCategory": "66296c4b077ce604a36754ea",
+  "discount": "0",
+  "brand": "Corona",
+  "stock": "Em estoque",
+  "supplier": "Tauste",
+  "created": "2024-04-26T09:25:36.289497100",
+  "updated": "2024-04-29T15:08:53.710177300",
+  "registryUser": "Admin",
+  "image": "beer.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662b9db252735c32a8cbbe52"
+  },
+  "name": "Muffin de Baunilha",
+  "description": "3 Unidades de Muffin",
+  "price": "5.50",
+  "idCategory": "65f85936ebe6a162dac87146",
+  "discount": "0",
+  "brand": "Trigo e Cia",
+  "stock": "Em estoque",
+  "supplier": "Vila Ema",
+  "created": "2024-04-26T09:27:30.323350900",
+  "updated": "2024-04-29T14:48:03.544835700",
+  "registryUser": "Admin",
+  "image": "muffin.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+},
+{
+  "_id": {
+    "$oid": "662b9e3752735c32a8cbbe53"
+  },
+  "name": "Semente de Chia",
+  "description": "Pacote de 150g",
+  "price": "10.20",
+  "idCategory": "66296bb3077ce604a36754e9",
+  "discount": "0",
+  "brand": "Empório",
+  "stock": "Em estoque",
+  "supplier": "Health",
+  "created": "2024-04-26T09:29:43.974651700",
+  "updated": "2024-04-29T14:47:18.037565",
+  "registryUser": "Admin",
+  "image": "chiaseed.jpg",
+  "quantity": 1,
+  "_class": "com.ms.product.model.Product"
+}]

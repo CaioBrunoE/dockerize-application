@@ -1,0 +1,62 @@
+<div class="container mt-2">
+  <div class="row g-5 my-2">
+    <div class="col-md-12 d-flex justify-content-center">
+      <form class="d-flex mb-1" role="search">
+        <input class="form-control me-14 large-input" type="search"
+        placeholder="Digite o produto que deseja encontrar!"
+        [(ngModel)]="searchValue" name="Buscar">
+      </form>
+    </div>
+
+  <!-- Cards de Produtos -->
+
+  <div *ngFor="let product of products  | product: searchValue" class="col-3">
+    <div class="card m-2 shadow p-2" >
+      <div class="ratio ratio-4x3" >
+        <img src="/assets/img/market/{{product.image}}" class="image-hover" alt="..." style="object-fit:cover" [routerLink]="['/details', product.id]">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+            <p class="description">{{product.description}}</p>
+
+              <!-- Imagem Sobreposta -->
+              <div class="{{product.discount > 0 ? 'position-absolute top-0 start-0 central-image' : 'hidden'}}"  style="background-image: url('../../../assets/img/market/offer_1.png'); ">
+                <!-- Div para centralizar o texto verticalmente e horizontalmente -->
+                <div class="position-absolute top-50 start-50 translate-middle" style="transform: translate(-50%, -50%);">
+                  <!-- Texto -->
+                  <h2 class="discount">{{product.discount}} %</h2>
+                </div>
+              </div>
+                <h2 class="{{product.discount > 0 ? 'price-hidden':'price-discount-hidden'}}">Oculto</h2>
+                <h2 class="{{product.discount > 0 ? 'price-hidden':'price'}}">{{product.price | currency : 'BRL'}}</h2>
+                <h2 class="{{product.discount > 0 ? 'price-discount':'price-hidden'}}"> De: {{product.price | currency : 'BRL'}}</h2>
+                <h2 class="{{product.discount > 0 ? 'price':'price-hidden'}}">Por : {{(product.price - (product.price * product.discount / 100)) | currency : 'BRL'}} </h2>
+                <!---<p class="quantity">{{product.quantity}}</p> -->
+                  <div class="container mt-4">
+                    <div class="row">
+                      <div class="col">
+                        <button type="button" (click)="onclickAdd(product)" class="btn btn-outline-success add">
+                          <i class="fa-solid fa-plus"></i>
+                         </button>
+                      </div>
+                         <div class="col-2">
+                          <p  class="quantity-field pt-1 pb-2">{{product.quantity}}</p>
+                         </div>
+                          <div class="col">
+                            <button type="button" (click)="onclickSub(product)" class="btn btn-outline-success add">
+                             <i class="fa-solid fa-minus"></i>
+                            </button>
+                          </div>
+                     </div>
+                      <button type="submit" routerLink="/shopping-card"  (click)="addToCart(product)" class="btn btn-outline-success green">Comprar <i class="fa-solid fa-cart-shopping"></i></button>
+                   </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+

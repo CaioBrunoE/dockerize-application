@@ -1,0 +1,146 @@
+<!-- Shoping Cart Section Begin -->
+<section class="shoping-cart spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="shoping__cart__table">
+          <table>
+            <thead>
+              <tr>
+                <th class="shoping__product">Produtos</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of cart.products">
+                <td class=" d-flex align-items-center p-2">
+                  <a class="card shadow w-25 me-5  ">
+                    <img
+                      src="/assets/img/market/{{ product.image }}"
+                      class="rounded p-1 m-0  "
+                      alt=""
+                    />
+                  </a>
+                  <span >
+                  <h5 class="fw-bold ">{{ product.name }}</h5>
+                </span>
+                </td>
+                <td class="shoping__cart__price">
+                  {{ product.price | currency }}
+                </td>
+                <td class="shoping__cart__quantity">
+                  <div class="row">
+                    <div class="col">
+                      <button
+                        type="button"
+                        (click)="onclickAdd(product)"
+                        class="btn btn-success"
+                      >
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+
+                    <div class="col-2 text-center">
+                      <p class="pt-1 pb-2">{{ product.quantity }}</p>
+                    </div>
+
+                    <div class="col">
+                      <button
+                        *ngIf="product.quantity > 1; else valoBtn"
+                        type="button"
+                        (click)="onclickSub(product)"
+                        class="btn btn-success"
+                      >
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                      <ng-template #valoBtn>
+                        <button
+                          class="btn btn-danger"
+                          type="button"
+                          (click)="onclickSub(product)"
+                        >
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </ng-template>
+                    </div>
+                  </div>
+                </td>
+                <td class="shoping__cart__total">
+                  {{ totalProd(product) | currency }}
+                </td>
+                <td class="shoping__cart__item__close">
+                  <span class="icon_close"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="shoping__cart__btns">
+          <a routerLink="/product" class="primary-btn cart-btn"
+            >CONTINUAR COMPRANDO</a
+          >
+          <a
+            routerLink="/product"
+            class="primary-btn cart-btn ms-3"
+            (click)="removeCart()"
+            >Esvaziar carrinho</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="shoping__continue">
+          <div class="shoping__discount">
+            <h5>Codigos de Desconto</h5>
+            <form>
+              <input
+                type="text"
+                class="form-control"
+                id="cupom"
+                required
+                [(ngModel)]="cupom"
+                name="cupom"
+              />
+              <button
+                type="submit"
+                (click)="aplicarDesc(cupom)"
+                class="site-btn"
+              >
+                APLICAR CUPOM
+              </button>
+            </form>
+            <p
+              class="text-success mt-2 cursor"
+              (click)="cupomAplicado = false"
+              role="alert"
+              *ngIf="cupomAplicado"
+            >
+              Cupom aplicado com sucesso...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="shoping__checkout">
+          <h5>Total no Carrinho</h5>
+          <ul>
+            <li>
+              Subtotal <span>{{ valorTotal | currency }} </span>
+            </li>
+            <li>
+              Total com desconto <span>{{ totalCDesc | currency }}</span>
+            </li>
+          </ul>
+          <a routerLink="/payment" class="primary-btn">IR PARA O CHECKOUT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Shoping Cart Section End -->

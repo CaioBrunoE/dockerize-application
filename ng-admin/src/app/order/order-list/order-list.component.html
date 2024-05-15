@@ -1,0 +1,54 @@
+<div class="container">
+  <h1 class="mt-4">Pedidos</h1>
+  <ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Listar Pedidos</li>
+  </ol>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="createOrder()">
+        <i class="fa fa-plus"></i> Cadastrar
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-12">
+      <form class="d-flex mb-5" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="searchValue" name="search">
+      </form>
+      <table class="table table-sm table-condensed table-hover">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Itens</th>
+            <th>Total</th>
+            <th>Pagamento</th>
+            <th>Usuário</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let order of orders | ordersearchfilter:searchValue |  paginate: { itemsPerPage: 5, currentPage: page, totalItems: totalLength } ">
+            <td>{{ order.client }}</td>
+            <td>{{ order.orderItems }}</td>
+            <td>{{ order.orderTotal | currency: 'BRL' }}</td>
+            <td>{{ order.paymentInformation }}</td>
+            <td>{{ order.registryUser }}</td>
+            <td>
+              <button class=" btn btn-primary" routerLink="/order-form/{{ order.id }}">
+                <i class="fa fa-edit"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br>
+  <div class="pagination justify-content-end">
+    <pagination-controls (pageChange)="page=$event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-category" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-order" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-payment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-product" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-user" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ng-admin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/site-ng" vcs="Git" />
+  </component>
+</project>

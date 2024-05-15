@@ -1,0 +1,55 @@
+<div class="container">
+  <h2 class="mt-2">Clientes</h2>
+  <ol class="breadcrumb mb-4">
+      <li class="breadcrumb-item active">Listar Cliente</li>
+  </ol>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary" (click)="createClient()">
+                <i class="fa fa-plus"></i> Cadastrar
+            </button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-12">
+          <form class="d-flex mb-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" [(ngModel)]="searchValue" name="search">
+          </form>
+            <table class="table table-sm table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                        <th>CPF</th>
+                        <th>Usuário</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let client of clients | searchfilter:searchValue |  paginate: { itemsPerPage: 5, currentPage: page, totalItems: totalLength } ">
+                        <td>{{ client.name }}</td>
+                        <td>{{ client.email }}</td>
+                        <td>{{ client.cel }}</td>
+                        <td>{{ client.cpf }}</td>
+                        <td>{{ client.registryUser }}</td>
+                        <td>
+                            <button class=" btn btn-primary"
+                                    routerLink="/client-form/{{ client.id }}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <br>
+    <div class="pagination justify-content-end">
+      <pagination-controls (pageChange)="page=$event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+    </div>
+</div>

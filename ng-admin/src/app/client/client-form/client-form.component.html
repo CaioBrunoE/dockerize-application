@@ -1,0 +1,101 @@
+<div class="container">
+  <h1 class="mt-4">Clientes</h1>
+  <ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">{{ client.id ? 'Editar Cliente' : 'Cadastrar Cliente'}}</li>
+  </ol>
+</div>
+<div class="container">
+  <form #clientform="ngForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-success" role="alert" *ngIf="success == true">
+          Cliente adicionado/salvo com sucesso!
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="client.id">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>ID:</label>
+          <input type="text" class="form-control" [(ngModel)]="client.id" name="id" disabled="true" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Nome: *</label>
+          <input type="text" class="form-control" [(ngModel)]="client.name" name="name" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Email: *</label>
+          <input type="text" class="form-control" [(ngModel)]="client.email" name="email" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Celular: *</label>
+          <input type="text" class="form-control" [(ngModel)]="client.cel" name="cel" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>CPF: *</label>
+          <input type="text" class="form-control" [(ngModel)]="client.cpf" name="cpf" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Usuário: *</label>
+          <input type="text" class="form-control" [(ngModel)]="client.registryUser" name="registryUser" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-success" *ngIf="!client.id">
+          <i class="fa fa-save"></i> Salvar
+        </button>
+        <button type="submit" class="btn btn-success" *ngIf="client.id">
+          <i class="fa fa-sync-alt"></i> Atualizar
+        </button>
+
+        <button type="button" class="btn btn-danger ml-1" routerLink="/client-list">
+          <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+        </button>
+        <!-- Button open modal -->
+        <button type="button" class="btn btn-danger ml-1" *ngIf="client.id" (click)="confirmDeletion(client)"
+          data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa fa-trash"></i> Excluir
+        </button>
+      </div>
+    </div>
+  </form>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Excluir Cliente?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Deseja realmente excluir o cliente <b>{{client.name}}</b>?
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" data-dismiss="modal" class="btn btn-success" (click)="deleteClient()"
+            routerLink="/client-list">Confirmar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+              class="fa fa-arrow-alt-circle-left"></i> Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

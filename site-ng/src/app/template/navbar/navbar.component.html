@@ -1,0 +1,98 @@
+<div class="humberger__menu__overlay" ></div>
+  <div class="humberger__menu__wrapper" >
+    <div class="humberger__menu__logo">
+      <a href="#"><img src="./assets/img/logo.png" alt=""></a>
+    </div>
+    <div class="humberger__menu__cart">
+      <ul>
+        <li><a href="#"><i class="fa fa-heart"></i> <span>2</span></a></li>
+        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a>
+        </li>
+      </ul>
+      <div class="header__cart__price">item: <span></span></div>
+    </div>
+    <div class="humberger__menu__widget">
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa fa-envelope"></i>Email: Exemplo.com.br</li>
+                <li>Frete grátis para pedidos acima de R$99</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <ul>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </ul>
+              </div>
+              <div class="header__top__right__language">
+                <img src="./assets/img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                  <li><a href="#">Spanis</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </div>
+              <div class="header__top__right__auth" *ngIf="isLoggedIn()">
+               <ng-container>
+                <span> Bem-vindo(a), {{ getUserSession().name }}</span>
+                <a (click)="logout()" class="no-underline"><i class="fa fa-sign-out"></i>Sair</a>
+              </ng-container>
+              </div>
+                <div class="header__top__right__auth" *ngIf="!isLoggedIn()">
+                  <a routerLink="/login" class="no-underline"><i class="fa fa-user"></i><b> Entre ou cadastre-se</b></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-2">
+          <div class="header__logo">
+            <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <nav class="header__menu">
+            <ul>
+              <li><a class="no-underline" routerLink="/home">Home</a></li>
+              <li><a class="no-underline" routerLink="/category"> Categorias</a>
+              <li><a class="no-underline" routerLink="/product">Produtos</a></li>
+              <li><a class="no-underline" routerLink="/service">Serviços</a></li>
+              <li><a class="no-underline" routerLink="/order"> Pedidos</a>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2">
+          <div class="header__cart">
+            <ul>
+              <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+              <li><a routerLink="shopping-card"><i class="fa fa-shopping-bag"></i> <span>{{getContador()}}</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span *ngIf="getContador() != 0">{{getValor()|currency}}</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="humberger__open">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+
+
+

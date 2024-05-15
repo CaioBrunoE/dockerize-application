@@ -1,0 +1,28 @@
+ <body class="sb-nav-fixed">
+  <app-login *ngIf="!isLoggedIn()"></app-login>
+  <app-navbar *ngIf="isLoggedIn()"></app-navbar>
+  <div id="layoutSidenav">
+    <app-sidebar *ngIf="isLoggedIn()"></app-sidebar >
+    <div id="layoutSidenav_content">
+      <main>
+        <div class="container-fluid">
+          <router-outlet *ngIf="isLoggedIn()" ></router-outlet>
+        </div>
+        <footer class="py-4 bg-light mt-auto fixed-bottom text-center" style="width: 100%; margin: 0; padding: 0;">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-center small">
+              <div class="">Copyright &copy; Meus Clientes 2024 - Projeto <span class=" text-success">Getronics</span>
+                FullStack</div>
+              <div>
+                <a class="ml-3" href="#">Privacy Policy</a>
+                &middot;
+                <a href="#">Terms &amp; Conditions</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+

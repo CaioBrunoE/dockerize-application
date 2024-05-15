@@ -1,0 +1,73 @@
+<div class="container">
+  <h1 class="mt-4">Produtos</h1>
+  <ol class="breadcrumb mb-4">
+      <li class="breadcrumb-item active">Listar Produto</li>
+  </ol>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary" (click)="createProduct()">
+                <i class="fa fa-plus"></i> Cadastrar
+            </button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-12">
+          <form class="d-flex mb-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisa" [(ngModel)]="searchValue" name="search">
+            <select class="form-select-sm" [(ngModel)]="searchBy" name="search-filter">
+              <option value="">Todos</option>
+              <option value="name">Nome</option>
+              <option value="description">Descrição</option>
+              <option value="price">Preço</option>
+              <option value="category">Categoria</option>
+              <option value="brand">Marca</option>
+              <option value="stock">Estoque</option>
+              <option value="supplier">Fornecedor</option>
+            </select>
+          </form>
+            <table class="table table-sm table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                        <th>Marca</th>
+                        <th>Estoque</th>
+                        <th>Fornecedor</th>
+                        <th>Usuário</th>
+                        <th>Imagem</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products | productsearchfilter:searchValue: searchBy |  paginate: { itemsPerPage: 5, currentPage: page, totalItems: totalLength } ">
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>{{ product.price | currency : 'BRL'}}</td>
+                        <td>{{ getCategoryName(product.idCategory)}}</td>
+                        <td>{{ product.brand }}</td>
+                        <td>{{ product.stock }}</td>
+                        <td>{{ product.supplier}}</td>
+                        <td>{{ product.registryUser }}</td>
+                        <td>{{product.image}}"</td>
+                        <td>
+                            <button class=" btn btn-primary"
+                                    routerLink="/product-form/{{ product.id }}">
+                                <i class="fa fa-edit"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  <br>
+  <div class="pagination justify-content-end">
+    <pagination-controls (pageChange)="page=$event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+  </div>
+</div>
+

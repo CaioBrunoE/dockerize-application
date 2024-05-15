@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="container-carrossel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" id="bannerService" routerLink="/product">
+        <div class="carousel-item active" data-bs-interval="1700">
+          <img src="../../../assets/img/carrossel_market/banner_marmita.png" class="d-block w-100" style="height: 400px; width: 700px" alt="..."/>
+        </div>
+        <div class="carousel-item" data-bs-interval="1700">
+          <img src="../../../assets/img/carrossel_market/banner_6.jpg" class="d-block w-100" style="height: 400px; width: 700px" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="../../../assets/img/carrossel_market/hortifruti.png" class="d-block w-100" style="height: 400px; width: 700px" alt="..."/>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container-img mt-5 ">
+      <div class="row">
+        <h3 class="text">OFERTAS DA SEMANA</h3>
+        <div *ngFor="let product of products" class="col-md-3">
+          <div class="card m-2 shadow p-2">
+            <div class="ratio ratio-4x3">
+              <img src="/assets/img/market/{{ product.image }}" class="image-hover" alt="..." style="object-fit: cover"/>
+              <div class="position-absolute top-0 start-0 central-image" style="background-image: url('../../../assets/img/market/offer_1.png');">
+                <div class="position-absolute top-50 start-50 translate-middle" style="transform: translate(-50%, -50%)">
+                  <h2 class="discount">{{ product.discount }} %</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="description">{{ product.description }}</p>
+              <h2 class="price">De: {{ product.price | currency : "BRL" }}</h2>
+              <h2 class="discount">
+                Por :
+                {{product.price - (product.price * product.discount) / 100 | currency : "BRL"}}
+              </h2>
+            </div>
+            <div class="row" id="btnPrice">
+              <div class="col-2 ms-5">
+                <button (click)="onclickAdd(product)" class="btn btn-outline-success"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="col-1 ms-5" >
+                <p class="quantity-field pt-1 pb-2" id="btnQuantity">{{ product.quantity }}</p>
+              </div>
+              <div class="col">
+                <button (click)="onclickSub(product)" class="btn btn-outline-success"><i class="fa-solid fa-minus"></i></button>
+              </div>
+            </div>
+            <button type="submit" routerLink="/shopping-card" (click)="addToCart(product)" class="btn btn-outline-success">Comprar<i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-img mt-5">
+    <div class="row">
+      <h3 class="text-service">CONHEÇA OS NOSSO SERVIÇOS</h3>
+      <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" id="bannerService" routerLink="/service">
+          <div class="carousel-item active" data-bs-interval="1700">
+            <img src="../../../assets/img/footer/service_marmita.png" class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item" data-bs-interval="1700">
+            <img src="../../../assets/img/footer/service_cafeteria.png" class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item" data-bs-interval="1700">
+            <img src="../../../assets/img/footer/service_cafe_da_manha.png" class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item" data-bs-interval="1700">
+            <img src="../../../assets/img/footer/serv_delivery.png" class="d-block w-100" alt="..."/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "11f152d5-f2c5-4294-8ed9-7c7754ae544a",
+		"name": "API-Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31901244"
+	},
+	"item": [
+		{
+			"name": "Post Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tesourão\",\r\n    \"description\": \"Tesoura extra grande para poda de gramado\",\r\n    \"price\": 40.00,\r\n    \"category\": \"Manutenção\",\r\n    \"brand\": \"Casa do construtor\",\r\n    \"stock\": \"Em estoque\",\r\n    \"supplier\": \"Telhanorte\",\r\n    \"registryUser\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9006/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Products",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"UPDATE - Tesoura Tokyo\",\r\n        \"description\": \"Tesoura para poda de bonsais\",\r\n        \"price\": 88.57,\r\n        \"category\": \"Manutenção\",\r\n        \"brand\": \"Limmat\",\r\n        \"stock\": \"UPDATE - Fora de estoque\",\r\n        \"supplier\": \"Leroy Merlin\",\r\n        \"registryUser\": \"Admin\"\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/api/products/65f4a2469fc0a90f375dba5f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"products",
+						"65f4a2469fc0a90f375dba5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/api/products/getId/65f495281295ad3409197677",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"products",
+						"getId",
+						"65f495281295ad3409197677"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tesourão\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/api/products/getName/Tesourão",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"products",
+						"getName",
+						"Tesourão"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9006/api/products/65f49dec9fc0a90f375dba5d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"products",
+						"65f49dec9fc0a90f375dba5d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

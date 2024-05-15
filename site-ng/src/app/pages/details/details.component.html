@@ -1,0 +1,46 @@
+<div class="container mt-1">
+  <div class="row g-1 my-2 mt-2 ">
+    <div class="col-md-8 mx-auto"> <!-- Llargura máxima do card -->
+      <div class="card m-2 shadow">
+        <div class="row">
+          <div class="col-md-5"> <!-- Largura da coluna da imagem -->
+            <img src="/assets/img/market/{{product.image}}" class="card-img-top" alt="..." style="object-fit: cover">
+          </div>
+          <div class="col-md-7"> <!-- Largura da coluna do conteúdo -->
+            <div class="card-body">
+              <h1 class="card-title">{{product.name}}</h1>
+              <h2 class="description">{{product.description}}</h2>
+              <h4 class="description">Marca: {{product.brand}}</h4>
+              <h1 class="price">{{product.price | currency : 'BRL'}}</h1>
+              <div class="container mt-4">
+                <div class="row justify-content-center">
+                  <div class="col-2">
+                      <button type="button" (click)="onclickAdd(product)" class="btn btn-add">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                  </div>
+                 <div class="col-1">
+                  <p  class="quantity-field pt-1 pb-2">{{product.quantity}}</p>
+                 </div>
+                    <div class="col-2">
+                      <button type="button" (click)="onclickSub(product)" class="btn btn-add">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+              </div>
+              <div>
+                <button type="button" routerLink="/shopping-card"  (click)="addToCart(product)" class="btn btn-primary btn-sm">Comprar</button>
+                <button type="button" routerLink="/product" class="btn btn-primary btn-sm">Voltar</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p></p>
+
+
+
