@@ -1,0 +1,26 @@
+{
+  "id": "65f34a1e2f8a26142ae0e315",
+  "orderDate": "2024-05-15",
+  "client": "Alice Smith",
+  "orderItems": [
+    {
+      "productId": "3",
+      "productName": "Product C",
+      "quantity": 1,
+      "price": 30.00
+    }
+  ],
+  "orderStatus": "Shipped",
+  "priceItem": "30.00",
+  "quantityItems": "1",
+  "orderTotal": "30.00",
+  "paymentMethod": "PayPal",
+  "shippingMethod": "Express",
+  "paymentInformation": "Transaction ID: 123456789",
+  "discountsAndFees": "-5.00 (Discount)",
+  "orderNotes": "Please deliver before 3 PM",
+  "created": "2024-05-15T08:45:00",
+  "updated": "2024-05-15T08:45:00",
+  "registryUser": "user",
+  "status": "active"
+}

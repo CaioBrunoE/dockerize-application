@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Saca de Cebola Nacional",
+    "description": "Saca de 1kg de cebola branca",
+    "price": "2.75",
+    "discount": "50",
+    "brand": "Da Terra",
+    "stock": "Em estoque",
+    "supplier": "Agro",
+    "image": "onion.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Morango Orgânico",
+    "description": "Bandeja de morangos de 300g",
+    "price": "19.99",
+    "discount": "0",
+    "brand": "Vinhedense",
+    "stock": "Fora de estoque",
+    "supplier": "Vinhedo LTDA",
+    "image": "strawberries.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Cenoura Orgânica",
+    "description": "Bandeja de 1kg de cenoura",
+    "price": "1.92",
+    "discount": "10",
+    "brand": "Direto da Serra",
+    "stock": "Em estoque",
+    "supplier": "Agro",
+    "image": "carrots.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": " Bandeja de Pêra Williams",
+    "description": "Bandeja de pêra com 500g",
+    "price": "3.40",
+    "discount": "0",
+    "brand": "Direto da Serra",
+    "stock": "Em estoque",
+    "supplier": "Agro",
+    "image": "fruits.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Croissant Tradicional",
+    "description": "1 Unidade de Croissant de Queijo",
+    "price": "9.50",
+    "discount": "0",
+    "brand": "Panidor",
+    "stock": "Em estoque",
+    "supplier": "Bread",
+    "image": "croissant.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Mirtilo Blueberry",
+    "description": "Blueberry embalada com 200g",
+    "price": "14.99",
+    "discount": "0",
+    "brand": "Da Terra",
+    "stock": "Em estoque",
+    "supplier": "Sítio Verde",
+    "image": "blueberries.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Ovos Caipira",
+    "description": "Caixa de ovo com 12 unidades",
+    "price": "15.99",
+    "discount": "15",
+    "brand": "Fazenda da Toca",
+    "stock": "Em estoque",
+    "supplier": "Sítio Verde",
+    "image": "eggs.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Alface Crespa",
+    "description": "Embalagem com 2 unidades ",
+    "price": "4.99",
+    "discount": "0",
+    "brand": "Direto da Serra",
+    "stock": "Em estoque",
+    "supplier": "Sítio Verde",
+    "image": "lettuce.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Queijo Suíço",
+    "description": "1 Unidade de Queijo Suíço",
+    "price": "25.99",
+    "discount": "0",
+    "brand": "Tirolez",
+    "stock": "Em estoque",
+    "supplier": "Tirolez",
+    "image": "cheese.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Sal Marinho",
+    "description": "Pacote de Sal Marinho de 500g",
+    "price": "7.70",
+    "discount": "0",
+    "brand": "Sal Cisne",
+    "stock": "Em estoque",
+    "supplier": "Sal Cisne",
+    "image": "salt.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Banana Prata",
+    "description": "6 Unidades de Banana Prata",
+    "price": "7.00",
+    "discount": "0",
+    "brand": "Mantiqueira",
+    "stock": "Em estoque",
+    "supplier": "Da Serra",
+    "image": "banana.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Framboesa Orgânica",
+    "description": "Bandeja de framboesa de 200g",
+    "price": "23.00",
+    "discount": "40",
+    "brand": "Organic",
+    "stock": "Em estoque",
+    "supplier": "Organicos da Terra",
+    "image": "raspberries.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Café Tradicional",
+    "description": "Pacote Café Mogiana de 500g",
+    "price": "12.50",
+    "discount": "0",
+    "brand": "Mogiana",
+    "stock": "Em estoque",
+    "supplier": "Café Mogiana",
+    "image": "coffee.jpg",
+    "quantity": "1"
+  },
+  {
+    "name": "Pão de Forma Integral",
+    "description": "Pão de Forma Integral de 500g",
+    "price": "6.90",
+    "discount": "0",
+    "brand": "Pão Master",
+    "stock": "Em estoque",
+    "supplier": "Bread",
+    "image": "bread.jpg",
+    "quantity": "1"
+  }
+]

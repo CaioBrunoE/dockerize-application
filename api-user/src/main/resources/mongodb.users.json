@@ -1,0 +1,113 @@
+[
+  {
+    "id": "65f349b02f8a26142ae0e313",
+    "name": "Larissa Braz",
+    "username": "LarissB",
+    "password": "427561",
+    "email": "larissa.braz@gmail.com",
+    "updated": "2024-04-10T13:28:45.181586600",
+    "registryUser": "admin"
+  },
+  {
+    "id": "65f34a1e2f8a26142ae0e315",
+    "name": "Carlos Queiroz",
+    "username": "carlosQ",
+    "password": "612536",
+    "email": "carlos.queiroz@gmail.com",
+    "updated": "2024-04-10T13:23:03.969064500",
+    "registryUser": "user"
+  },
+  {
+    "id": "65f47c8cffa46124ab48be74",
+    "name": "Rafaela Santos",
+    "username": "rafsanT",
+    "password": "345677",
+    "email": "rafaela.santos@gmail.com",
+    "created": "2024-03-15T13:51:24.003418800",
+    "updated": "2024-04-11T14:31:31.814640900",
+    "registryUser": "user"
+  },
+  {
+    "id": "65f87e4c47628e7d9a56e53f",
+    "name": "Lorena Valverde",
+    "username": "lorenaV",
+    "password": "123456",
+    "email": "lorena.val@gmail.com",
+    "created": "2024-03-18T14:47:56.029635",
+    "updated": "2024-04-10T16:54:29.063594200",
+    "registryUser": "user"
+  },
+  {
+    "id": "6616e591997a1e57d53d524d",
+    "name": "Mariana Consolaro",
+    "username": "marianA",
+    "password": "158556",
+    "email": "mariana.c@gmail.com",
+    "created": "2024-04-10T16:16:33.146075900",
+    "registryUser": "admin"
+  },
+  {
+    "id": "661826ee3a7e705dd1337c81",
+    "name": "Flor Alves",
+    "username": "florAlv",
+    "password": "889745",
+    "email": "flor.alves@gmail.com",
+    "created": "2024-04-11T15:07:42.695726800",
+    "registryUser": "user"
+  },
+  {
+    "id": "661984e27bf36612193171ac",
+    "name": "Maria Lindinalva",
+    "username": "mariaaL",
+    "password": "587415",
+    "email": "maria.lindinalva@hotmail.com",
+    "created": "2024-04-12T16:00:50.493818300",
+    "updated": "2024-04-12T17:37:47.684657400",
+    "registryUser": "user"
+  },
+  {
+    "id": "66199b617bf36612193171ad",
+    "name": "Paloma Soares",
+    "username": "palomaS",
+    "password": "123458",
+    "email": "paloma.soares@gmail.com",
+    "created": "2024-04-12T17:36:49.054885900",
+    "registryUser": "admin"
+  },
+  {
+    "id": "6621bf61bd8bb45caef6d684",
+    "username": "Karina Lavelord",
+    "password": "$2a$10$qE.fM2U9dbTUhzHdY8SL4O2.9no5ihGDTYJkdNaqripNInnBhNdOW",
+    "email": "karina.lavelord@gmail.com"
+  },
+  {
+    "id": "66226dc62fe6064385f7285a",
+    "username": "Joelma Flores",
+    "password": "$2a$10$Z8xr4SOcSElGoKMff0We3ufNt/F9nDA1i8y61ifcH7dfXhzwF6ueC",
+    "email": "Joelma.flores@gmail.com"
+  },
+  {
+    "id": "6629673ae427c24226d8367b",
+    "username": "Larissa Tavares",
+    "password": "$2a$10$yqoPVOKocdfq08t0g8.NJemtkMqVBpJDNQ0SWWEXOw4KcliGClVDW",
+    "email": "larissa.tavares@gmail.com"
+  },
+  {
+    "id": "66296d710af1615dcb7ab728",
+    "username": "Carolina Santos",
+    "password": "$2a$10$szhSlgp6rfJXctaA5BZTF.8md4taDzYDq6/rb/LHKpGgsFaMRRLbu",
+    "email": "carolina@gmail.com"
+  },
+  {
+    "id": "662ab9ac2f95c77cb0fa19c1",
+    "username": "Lorena Souza",
+    "password": "$2a$10$McfA/21qqJPhO3yfTWvcbeEPLBB.QFZP4NJRpgpeezso9W.MQVFWm",
+    "email": "lorena.s@gmail.com"
+  },
+  {
+    "id": "662bb48e60544d3db08c884b",
+    "username": "Lara Menezes",
+    "password": "$2a$10$mjZ6nsXMcxhRNs7.8w7veOoSxr0NkmpwrKzv7w4u5re0N71.TEevK",
+    "email": "lara.menezes@gmail.com"
+  }
+]

@@ -1,0 +1,17 @@
+[{
+  "id": "663a6226d544a66771c53d79",
+  "name": "Caio Bruno",
+  "email": "caiobruno@gmail.com",
+  "username": "Caio Bruno",
+  "password": "$2a$10$d8Gm8mY.0EkcUitPu0MGSOBKoqqS.1rDFHq/xPBUFN2N7yCl/2MhK",
+  "role": "ADMIN"
+},
+  {
+    "id": "662fdb097b2b466068030a38",
+    "name": "Neuber Souza",
+    "email": "neuber@gmail.com",
+    "username": "neuber",
+    "password": "$2a$10$j6YPnDYCNFbwwT4Lyqaqfe4p45EWpLhoU6Exv6iI.jx7USMKf08dK",
+    "role": "ADMIN"
+  }
+]

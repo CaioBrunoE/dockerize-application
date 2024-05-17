@@ -1,0 +1,86 @@
+[
+  {
+    "id": "65f85936ebe6a162dac87146",
+    "name": "Padaria",
+    "type": 2,
+    "image": "padaria.jpg",
+    "created": "2024-04-24T16:53:41.136355300"
+  },
+  {
+    "id": "66296bb3077ce604a36754e9",
+    "name": "Mercearia",
+    "type": 2,
+    "image": "mercearia.jpg",
+    "created": "2024-04-24T17:29:39.494155200"
+  },
+  {
+    "id": "66296c4b077ce604a36754ea",
+    "name": "Bebidas",
+    "type": 2,
+    "image": "wine.jpg",
+    "created": "2024-04-24T17:32:11.708041200"
+  },
+  {
+    "id": "66296d50077ce604a36754eb",
+    "name": "Granjeiro",
+    "type": 2,
+    "image": "eggs.jpg",
+    "created": "2024-04-24T17:36:32.109678400"
+  },
+  {
+    "id": "66296e7f077ce604a36754ec",
+    "name": "Carnes",
+    "type": 2,
+    "image": "carne.jpg",
+    "created": "2024-04-24T17:41:35.122079700"
+  },
+  {
+    "id": "66296eaf077ce604a36754ed",
+    "name": "Hortifruti",
+    "type": 2,
+    "image": "hortifruti.jpg",
+    "created": "2024-04-24T17:42:23.465186"
+  },
+  {
+    "id": "66296ec4077ce604a36754ee",
+    "name": "Organicos",
+    "type": 2,
+    "image": "organico.jpg",
+    "created": "2024-04-24T17:42:44.626915500"
+  },
+  {
+    "id": "66296ef2077ce604a36754ef",
+    "name": "Laticinios",
+    "type": 2,
+    "image": "laticinio.jpg",
+    "created": "2024-04-24T17:43:30.878788900"
+  },
+  {
+    "id": "662aa810d0e49675ae7dfabb",
+    "name": "Alimentacao",
+    "type": 1,
+    "image": "alimentacao.jpg",
+    "created": "2024-04-25T15:59:28.353173700"
+  },
+  {
+    "id": "662aa825d0e49675ae7dfabc",
+    "name": "Entrega",
+    "type": 1,
+    "image": "entrega.jpg",
+    "created": "2024-04-25T15:59:49.730534700"
+  },
+  {
+    "id": "662aa834d0e49675ae7dfabd",
+    "name": "Presentes",
+    "type": 1,
+    "image": "presentes.jpg",
+    "created": "2024-04-25T16:00:04.925855700"
+  },
+  {
+    "id": "662aa84dd0e49675ae7dfabe",
+    "name": "Lanches",
+    "type": 1,
+    "image": "lanches.jpg",
+    "created": "2024-04-25T16:00:29.812753400"
+  }
+]
